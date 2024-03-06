@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/0b7846c307.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/pontos.css">
+        <link rel="stylesheet" href="assets/css/button.css">
+
+        <title>Ogum Sete Ondas</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="header__logo"></a>
+
+            <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+                    <a href="" class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="assets/img/logo-terreiro.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <span class="nav__name">Terreiro de Umbanda</span>
+                            <span class="nav__name">Ogum Sete Ondas</span>
+                        </div>
+                    </a>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="/" class="nav__link active">Inicio</a></li>
+
+                            <li class="nav__item dropdown">
+                                <a href="#" class="nav__link dropdown__link">Fundamentos <i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                    
+    
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__item"><a href="/pontos.html" class="nav__link">Pontos</a></li>
+                                   <!-- <li class="dropdown__item"><a href="#" class="nav__link">Ervas</a></li>
+                                    <li class="dropdown__item"><a href="#" class="nav__link">Homenagens</a></li>
+                                    <li class="dropdown__item"><a href="#" class="nav__link">Velas</a></li>-->
+                                </ul>
+                            </li>
+
+                            <li class="nav__item dropdown" id="entidades">
+                                <a href="#about" class="nav__link dropdown__link">Umbanda <i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                    
+    
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__item"><a href="#" value="oxala" class="nav__link">Oxala</a></li>
+                                    <li class="dropdown__item"><a href="#" value="ogum" class="nav__link">Ogum</a></li>
+                                    <li class="dropdown__item"><a href="#" value="iemanja" class="nav__link">Iemanja</a></li>
+                                    <li class="dropdown__item"><a href="#" value="preto-velho" class="nav__link">Pretos Velho</a></li>
+                                    <li class="dropdown__item"><a href="#" value="oxum" class="nav__link">Oxum</a></li>
+                                    <li class="dropdown__item"><a href="#" value="iansa" class="nav__link">Iansã</a></li>
+                                    <li class="dropdown__item"><a href="#" value="oxossi" class="nav__link">Oxossi</a></li>
+                                    <li class="dropdown__item"><a href="#" value="xango" class="nav__link">Xango</a></li>
+                                    <li class="dropdown__item"><a href="#" value="caboclos" class="nav__link">Povo de Mata</a></li>
+                                    <li class="dropdown__item"><a href="#" value="cosme" class="nav__link">Cosme e Damião</a></li>
+                                    <li class="dropdown__item"><a href="#" value="cigano" class="nav__link">Ciganos</a></li>
+                                    <li class="dropdown__item"><a href="#" value="marinheiro" class="nav__link">Marinheiro</a></li>
+                                    <li class="dropdown__item"><a href="#" value="boiadeiro" class="nav__link">Boiadeiro</a></li>
+                                    <li class="dropdown__item"><a href="#" value="umbanda" class="nav__link">Umbanda</a></li>
+                                    <li class="dropdown__item"><a href="#" value="abertura" class="nav__link">Abertura Umbanda</a></li>
+                                    <li class="dropdown__item"><a href="#" value="defumacao" class="nav__link">Defumação</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav__item dropdown" id="entidades-exu">
+                                <a href="#about" class="nav__link dropdown__link">Exu <i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                    
+    
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__item"><a href="#" value="tranca-rua" class="nav__link">Tranca Rua</a></li>
+                                    <li class="dropdown__item"><a href="#" value="ganga" class="nav__link">Exu Ganga</a></li>
+                                    <li class="dropdown__item"><a href="#" value="caveira" class="nav__link">Exu Caveira</a></li>
+                                    <li class="dropdown__item"><a href="#" value="ze" class="nav__link">Zé Pilintra</a></li>
+                                    <li class="dropdown__item"><a href="#" value="mirim" class="nav__link">Exu Mirim</a></li>
+                                    <li class="dropdown__item"><a href="#" value="tiriri" class="nav__link">Exu Tiriri</a></li>
+                                    <li class="dropdown__item"><a href="#" value="mare" class="nav__link">Exu Maré</a></li>
+                                    <li class="dropdown__item"><a href="#" value="marabo" class="nav__link">Exu Marabô</a></li>
+                                    <li class="dropdown__item"><a href="#" value="porteira" class="nav__link">Exu Porteira</a></li>
+                                    <li class="dropdown__item"><a href="#" value="morcego" class="nav__link">Exu Morcego</a></li>
+                                    <li class="dropdown__item"><a href="#" value="veludo" class="nav__link">Exu Veludo</a></li>
+                                    <li class="dropdown__item"><a href="#" value="sete" class="nav__link">Sete Cruzeiros</a></li>
+                                    <li class="dropdown__item"><a href="#" value="bara" class="nav__link">Exu Bará</a></li>
+                                    <li class="dropdown__item"><a href="#" value="capa-preta" class="nav__link">Exu Capa Preta</a></li>
+                                    <li class="dropdown__item"><a href="#" value="abertura-exu" class="nav__link">Abertura</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav__item dropdown" id="entidades-pg">
+                                <a href="#about" class="nav__link dropdown__link">Pombos Giras <i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                    
+    
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__item"><a href="#" value="quiteria" class="nav__link">Maria Quitéria</a></li>
+                                    <li class="dropdown__item"><a href="#" value="padilha" class="nav__link">Maria Padilha</a></li>
+                                    <li class="dropdown__item"><a href="#" value="navalha" class="nav__link">Maria Navalha</a></li>
+                                    <li class="dropdown__item"><a href="#" value="rosa-caveira" class="nav__link">Rosa Caveira</a></li>
+                                    <li class="dropdown__item"><a href="#" value="rosa-negra" class="nav__link">Rosa Negra</a></li>
+                                    <li class="dropdown__item"><a href="#" value="mulambo" class="nav__link">Maria Mulambo</a></li>
+                                    <li class="dropdown__item"><a href="#" value="farrapo" class="nav__link">Maria Farrapo</a></li>
+                                    <li class="dropdown__item"><a href="#" value="pg-praia" class="nav__link">PG da Praia</a></li>
+                                    <li class="dropdown__item"><a href="#" value="pg-sol" class="nav__link">PG do Sol</a></li>
+                                    <li class="dropdown__item"><a href="#" value="forno" class="nav__link">PG do Forno</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="pontos">
+                <div id="ogum-info" class="entity-info">
+                    <h1>Pontos de Ogum</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ogum de lei</p>
+                        <p>Não me deixe sofrer tanto assim (2x)</p>
+                        <p>Quando eu morrer</p>
+                        <p>Vou passar lá na Aruanda</p>
+                        <p>Saravá Ogum</p>
+                        <p>Saravá seu Sete Ondas (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=7nduhmcJxxI" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/5BcmXvdBZ0vGwA5xgNDuXF?si=635e089db03e4cf1" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Estava na beira da praia</p>
+                        <p>Quando vi Sete Ondas passar (2x)</p>
+                        <p>Abre a porta o gente, que ai vem Ogum</p>
+                        <p>Com seu cavalo marinho, ele vem saravá (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=mACNo-Da3qA" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Quando Ogum partiu para guerra</p>
+                        <p>Iemanja chorou (2x)</p>
+                        <p>Quando Ogum voltou vencedor</p>
+                        <p>Iemanja cantou (2x)</p>
+                        <p>Ogum Ogum de ronda</p>
+                        <p>Ogum Ogum Sete Ondas (2x)</p>
+                        <p>Salve Ogum no mar</p>
+                        <p>Salve Ogum na areia (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=xsNB5bxl6rw" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/3FaKNm6qX9jLkatP5i1rX5?si=f6743a8992704ba3" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu tenho sete espadas para me defender</p>
+                        <p>Eu tenho Ogum em minha companhia (2x)</p>
+                        <p>Ogum é meu pai</p>
+                        <p>Ogum é meu guia</p>
+                        <p>Ogum vai chegar</p>
+                        <p>Venha com Deus e a Virgem Maria</p>
+                        <a href="https://www.youtube.com/watch?v=W5H07RNvL0Q" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/1ds26AJqv67hq2p0rou8Qk?si=adbec8ea79de4354" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Pedimos licença a zambi</p>
+                        <p>A Oxum e Iemanjá</p>
+                        <p>Para abrir nossos trabalhos</p>
+                        <p>Com a bandeira de Oxalá (2x)</p>
+                        <p>Saravá Ogum, saravá Congá (2x)</p>
+                        <p>Saravá seu Sete Ondas, ele é rei é orixá</p>
+                        <p>Saravá as almas, saravá congá (2x)</p>
+                        <p>Pisa na linha de Umbanda</p>
+                        <p>Que eu quero ver</p>
+                        <p>Ogum Sete Ondas</p>
+                        <p>Pisa na linha de Umbanda</p>
+                        <p>Que eu quero ver</p>
+                        <p>Ogum Beira Mar</p>
+                        <p>Pisa na linha de Umbanda</p>
+                        <p>Que eu quero ver</p>
+                        <p>Ogum Iara</p>
+                        <p>Ogum Megê</p>
+                        <p>Seu cangira de Umbanda auê</p>
+                        <p>Pisa na linha de Umbanda</p>
+                        <p>Que eu quero ver</p>
+                        <p>Ogum Sete Ondas</p>
+                        <p>Pisa na linha de Umbanda</p>
+                        <p>Que eu quero ver</p>
+                        <p>Ogum Beira Mar</p>
+                        <p>Pisa na linha de Umbanda</p>
+                        <p>Que eu quero ver</p>
+                        <p>Ogum Iara</p>
+                        <p>Ogum Megê</p>
+                        <p>Ora pisa no reino ô cangira</p>
+                        <p>Ora pisa no reino ô cangira</p>
+                        <p>Ora pisa no reino ô cangira</p>
+                        <p>Táta de Umbanda ó Cangira (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=bA2X-co8W7o" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ogum itati malé</p>
+                        <p>Malé Ogum (2x)</p>
+                        <p>Guerreiro guerreiro</p>
+                        <p>Guerreiro do Humaitá (2x)</p>
+                        <p>Ogum venceu demandas</p>
+                        <p>Nos campos do Humaitá (2x)</p>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Seu Ordenança mandou avisar</p>
+                        <p>Seu cavalo está selado para viajar</p>
+                        <p>Mas como é lindo o romper da aurora</p>
+                        <p>Ogum vai galopando pela estrada a fora (2x)</p>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Selei selei</p>
+                        <p>O meu cavalo eu selei (2x)</p>
+                        <p>Pai Ogum já vai embora</p>
+                        <p>E o meu cavalo eu selei (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=lYEXO8QKgrw" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                
+                </div>
+                
+                <div id="preto-velho-info" class="entity-info">
+                    <h1>Pontos de Preto Velho</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Preto velho trabalha sentado</p>
+                        <p>Se for preciso trabalha em pé (2x)</p>
+                        <p>Mandinga de preto velho</p>
+                        <p>É galho de arruda e folha de guiné (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=rjNf4bplKDc" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/7G0kRrsBXAuSadWQRtB0Dw?si=8b3d713227014898" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Adorei as almas</p>
+                        <p>As almas me atenderam (2x)</p>
+                        <p>Era as santas almas</p>
+                        <p>La do cruzeiro (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=ZcSiNybrCiw" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/3hlel2P1vxqncSrX7xIj2n?si=946cc12c61ef45b5" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Lá vem Preta Velha descendo a serra com a sua sacola</p>
+                        <p>Ela traz um rosário, ela traz uma guia</p>
+                        <p>Ela vem de Angola (2x)</p>
+                        <p>Eu quero ver Vovó</p>
+                        <p>Eu quero ver Vovó</p>
+                        <p>Eu quero ver</p>
+                        <p>Se filho de pemba tem querer (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=td6xfiUyfxU" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Filho se você precisar</p>
+                        <p>É só pensar na Vovó</p>
+                        <p>Que ela vem te ajudar (2x)</p>
+                        <p>Pensa numa estrada longa zifio</p>
+                        <p>La no seu jacutá</p>
+                        <p>Em uma casinha branca zifio</p>
+                        <p>Que a Vovó ta lá</p>
+                        <p>Sentada num banquinha tosco zifio</p>
+                        <p>Com a sua rosário na mão</p>
+                        <p>Pensa na vovó Maria Redonda</p>
+                        <p>Fazendo oração (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=yVejwhf31zo" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/02bsq6pu4tVthEzBOQClME?si=9011159290ea4fa3" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Firma ponto minha gente</p>
+                        <p>Preto velho vai chegar</p>
+                        <p>Ele vem de Aruanda</p>
+                        <p>Ele vem pra trabalhar (2x)</p>
+                        <p>Saravá Pai Joaquim</p>
+                        <p>Saravá saravá saravá</p>
+                        <p>Ele chegou no terreiro</p>
+                        <p>Ele veio nos ajudar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=0lbnkIyG_hY" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/4kw9uaDZhPc16RMnGtxwZd?si=0074dd501b0e48ec" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Vovô não quer</p>
+                        <p>Casca de coco no terreiro (2x)</p>
+                        <p>Casca de coco faz lembrar</p>
+                        <p>O tempo do cativeiro (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=LWauGnZNBAI" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>A fumaça do cachimbo do Vovô</p>
+                        <p>Sobe no céu só não ver quem não quer (2x)</p>
+                        <p>A mironga do Preto velho</p>
+                        <p>É feita de noite de baixo do pé (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=FfHW2y4tklg" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>É o vento que balança a folha Guiné</p>
+                        <p>É o vento que balança a folha</p>
+                        <p>Éééé Pai Guiné</p>
+                        <p>É o vento que balança a folha</p>
+                        <a href="https://www.youtube.com/watch?v=o_ui18IJ23Q" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/0fFMkXGlaUZloO18w8i375?si=e660ebe06e7b40bc" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Que navio é esse que chegou agora</p>
+                        <p>É o navio negreiro com os escravos de Angola (2x)</p>
+                        <p>Veio de Angola, de Luanda e de Guiné</p>
+                        <p>Traz a macumba a capoeira e o candomblé (2x)</p>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Navio negreiro no fundo do mar</p>
+                        <p>Corrente pesada na areia arrastar</p>
+                        <p>E a negra escrava se poe a cantar (2x)</p>
+                        <p>Saravá nossa mãe Iemanjá (2x)</p>
+                    </div>
+                </div>
+                
+                <div id="oxum-info" class="entity-info">
+                    <h1>Pontos de Oxum</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Deusa do amor, puro encanto</p>
+                        <p>Cubra sua filha, com o seu manto</p>
+                        <p>Deusa encantada, minha paixão</p>
+                        <p>Canto pra ti em forma de oração</p>
+                        <p>Numa mata tão bonita, uma cascata encontrei</p>
+                        <p>E em suas águas claras, ajoelhada me banhei</p>
+                        <p>E o som de um canto lindo, tomou conta do lugar</p>
+                        <p>A visão que eu avistava, era de Oxum Opará</p>
+                        <p>Deusa do amor, puro encanto</p>
+                        <p>Cubra sua filha, com o seu manto</p>
+                        <p>Deusa encantada, minha paixão</p>
+                        <p>Canto pra ti em forma de oração</p>
+                        <p>Aos seus pés flores tão lindas, nas águas a flutuar</p>
+                        <p>E eu ali admirando, a rainha do lugar</p>
+                        <p>Foi quando um Ilá tão forte, lá das matas ecoou</p>
+                        <p>Era de meu pai Oxóssi, procurando seu amor</p>
+                        <p>Deusa do amor, puro encanto</p>
+                        <p>Cubra sua filha, com o seu manto</p>
+                        <p>Deusa encantada, minha paixão</p>
+                        <p>Canto pra ti em forma de oração</p>
+                        <p>Com tamanha devoção, continuei a pedir</p>
+                        <p>Ao rei da minha nação, que também ficasse ali</p>
+                        <p>No habitar da cachoeira, onde Oxum estava a brilhar</p>
+                        <p>Para que o meu pedido, pudesse se realizar</p>
+                        <p>Deusa do amor, puro encanto</p>
+                        <p>Cubra sua filha, com o seu manto</p>
+                        <p>Deusa encantada, minha paixão</p>
+                        <p>Canto pra ti em forma de oração</p>
+                        <a href="https://www.youtube.com/watch?v=X5zrztoLnVY" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Mamãe Oxum estava sentada na pedreira</p>
+                        <p>Com a coroa sustentada por Xangô</p>
+                        <p>Mamãe Oxum é rainha das cachoeiras</p>
+                        <p>Me de suas bençãos e irradie sua luz</p>
+                        <p>Ora ieie o, Ora ieie o, Ora ieie o mamãe Oxum</p>
+                        <p>Ora ieie o menina da água encantada</p>
+                        <p>Ora ieie o, Ora ieie o, Ora ieie o mamãe Oxum</p>
+                        <p>É rainha do amor na luz dourada (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=lCWEJi0Jf5w" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Mamãe Oxum salve a sua cachoeira</p>
+                        <p>Que vem descendo lá do alto da Pedreira (2x)</p>
+                        <p>Mas como é linda a cachoeira da Oxum</p>
+                        <p>Que esta guardada com os soldados de Ogum (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=PqJ-IUBaGs8" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Foi na beira do rio</p>
+                        <p>A onde Oxum chorou (2x)</p>
+                        <p>Chora aiê êo,</p>
+                        <p>Chora os filhos seus (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu vi mamãe Oxum na cachoeira</p>
+                        <p>Sentada na beira do rio (2x)</p>
+                        <p>Colhendo lírio lirie</p>
+                        <p>Colhendo lírio liria</p>
+                        <p>Colhendo lírios para enfeitar nosso congá</p>
+                        <a href="https://www.youtube.com/watch?v=WNXj9h0IIGs" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2b7Kc1rERRUm8IzNaukfiW?si=ff91e3b71b7548c3" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Se minha mãe é Oxum</p>
+                        <p>Na Umbanda e no Candomblé</p>
+                        <p>Aieie aieieo aieieo</p>
+                        <p>Aieie minha mãe Oxumaré (2x)</p>
+                        <p>Ela vem beirando o rio</p>
+                        <p>Colhendo lirios pra nos ofertar</p>
+                        <p>Mamãe Oxum, aieie mamãe Oxum</p>
+                        <p>Orixá desça e venha nos abençoar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=IKzq9cQxP00" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ora yeyeô</p>
+                        <p>Aonde Oxum chorou (2x)</p>
+                        <p>Chora aiê êo,</p>
+                        <p>Chora os filhos seus (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=t92QFDE_mV8" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/4E84ZlkwXvXoVSLekCQ6mn?si=f339628aff4e4a0c" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu vi mamãe Oxum</p>
+                        <p>Cantando na cachoeira, dançando toda faceira</p>
+                        <p>Tão linda como ela faz</p>
+                        <p>E quando ela canta</p>
+                        <p>Xangô senta na pedreira</p>
+                        <p>Oxossi lá na ribeira</p>
+                        <p>Nem vento não venta mais</p>
+                        <p>Aieieo minha mãe</p>
+                        <p>Aieieo Mamãe Oxum</p>
+                        <p>Aieieo moça bonita, demais (2x)</p>
+                        <p>Canta Oxum</p>
+                        <p>Alivia meu coração</p>
+                        <p>Me tira da solidão</p>
+                        <p>Me traz paz (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=7X4V3fg4-Ns" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/6diJPswSY1OBLklorRp6jK?si=a2081bdb7ddd441c" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="iansa-info" class="entity-info">
+                    <h1>Pontos de Iansã</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Olha que o céu clareou</p>
+                        <p>Quando o dia raiou</p>
+                        <p>Fez o filho pensar</p>
+                        <p>A mãe do tempo mandou</p>
+                        <p>A nova era chegou</p>
+                        <p>Agora vamos plantar</p>
+                        <p>Do Humaitá Ogum bradou</p>
+                        <p>Senhor Oxossi atinou</p>
+                        <p>Iansã vai chegar</p>
+                        <p>O Ogã já firmou</p>
+                        <p>Atabaque afinou</p>
+                        <p>Agora vamos cantar</p>
+                        <p>A eparrei ela é Oyá, ela é Oyá</p>
+                        <p>A eparrei é Iansã, é Iansã</p>
+                        <p>A eparrei</p>
+                        <p>Quando Iansã vai pra batalha</p>
+                        <p>Todos os cavaleiros param</p>
+                        <p>Só pra ver ela passar</p>
+                        <a href="https://www.youtube.com/watch?v=p_6Qu2vcqzU" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/1yWfcfkZE6bZShIfCYeBOO?si=310d48f7187f4a56" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ô Iansã Menina seu jeito me fascina</p>
+                        <p>É de arrepiar</p>
+                        <p>Ô Iansã guerreira</p>
+                        <p>Não há barreiras pra lhe segurar (2x)</p>
+                        <p>Ela chegou, bem devagar</p>
+                        <p>E observou em cada canto desse mundo</p>
+                        <p>E a fez pensar</p>
+                        <p>A luz brilhou, em seu Jacutá</p>
+                        <p>E anunciou</p>
+                        <p>Prepare que a Guerreira agora vai Reinar</p>
+                        <p>Ô Iansã Menina seu jeito me fascina</p>
+                        <p>É de arrepiar</p>
+                        <p>Ô Iansã guerreira</p>
+                        <p>Não há barreiras pra lhe segurar (2x)</p>
+                        <p>O tempo mudou, fez o céu brilhar</p>
+                        <p>O Sol e a Lua irradiam energia para renovar</p>
+                        <p>Que renasça o amor e fortaleça a fé</p>
+                        <p>Pois Iansã esta soprando pelo mundo</p>
+                        <p>Um vendaval de Axé</p>
+                        <p>Ô Iansã Menina seu jeito me fascina</p>
+                        <p>É de arrepiar</p>
+                        <p>Ô Iansã guerreira</p>
+                        <p>Não há barreiras pra lhe segurar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=q4nu9fJ_RQM" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/0AOqVGjCNAf4unqc1niWBc?si=bbfe7d50b3ad4e6c" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ventou</p>
+                        <p>Mas que ventania (2x)</p>
+                        <p>Iansã é nossa mãe</p>
+                        <p>Iansã é nossa guia (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=iDk8Y_Z7vEo" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="xango-info" class="entity-info">
+                    <h1>Pontos de Xango</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Estão queimando velas para me derrubar</p>
+                        <p>Eu já fiquei doente meu pai, sem poder andar</p>
+                        <p>Mas hoje estou aqui, que é para saudar Xangô</p>
+                        <p>E vira essa macumba no peito de quem mandou</p>
+                        <p>Xangô meu pai</p>
+                        <p>Amarra os inimigos e da um nó</p>
+                        <p>Xangô meu pai</p>
+                        <p>Amarra na pontinha do cipó</p>
+                        <a href="https://www.youtube.com/watch?v=21qCvLxjGlg" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Por de trás daquela serra</p>
+                        <p>Tem uma linda cachoeira (2x)</p>
+                        <p>É de meu pai Xangô</p>
+                        <p>Que arrebentou sete pedreiras (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=9D_CMog5fVE" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/1z5VFr7JpUYduJwGTQkcpj?si=cf1782d53f0444fe" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Se eu errei</p>
+                        <p>Aqui estou</p>
+                        <p>Pedindo maleme meu pai Xangô (2x)</p>
+                        <p>Mandai a faisca de um raio pra me iluminar</p>
+                        <p>Segura a pedra na pedreira</p>
+                        <p>Não deixa rolar</p>
+                        <p>Xangô, caô meu pai</p>
+                        <p>Os seus filhos bambeiam mas não caem</p>
+                        <a href="https://www.youtube.com/watch?v=A1YDc1DHmFo" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2bCL0CwnqQ6uvG1swvPwkM?si=3ef5fdbd3d954bf6" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ele bradou na aldeia</p>
+                        <p>Bradou na cachoeira</p>
+                        <p>Em noite de luar</p>
+                        <p>No alto da pedreira</p>
+                        <p>Vai fazer justiça</p>
+                        <p>Pra nos ajudar (2x)</p>
+                        <p>Ele bradou na aldeia</p>
+                        <p>Caô, caô</p>
+                        <p>E aqui vai bradar</p>
+                        <p>Caô, caô</p>
+                        <p>Ele é Xangô da pedreira</p>
+                        <p>Ele nasceu na cachoira</p>
+                        <p>Lá no Juremá (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=cWytYNEFQbI" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/1YLRKK6mPxxyQIlpULXhRU?si=ea3fc8ba99c140f8" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Pedra rolou pai Xangô</p>
+                        <p>Lá na pedreira</p>
+                        <p>Segura a pedra meu pai</p>
+                        <p>Na cachoeira (2x)</p>
+                        <p>Tenho meu corpo fechado</p>
+                        <p>Xangô é meu protetor</p>
+                        <p>Segura a pemba meu filho</p>
+                        <p>Pai de cabeça chegou (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=d__j0UfYkuE" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2TRbJBUhAv8qihyZEGOOpk?si=f0968b70dca64c72" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>A sua machadinha brilhou</p>
+                        <p>E a sua machadinha brilhou</p>
+                        <p>Brilhou, brilhou (2x)</p>
+                        <p>Quem manda lá na mata é Oxossi</p>
+                        <p>Quem manda na pedreira é Xangô</p>
+                        <p>Caô, caô (2x)</p>
+                        <p>Eu fui la nas matas</p>
+                        <p>Buscar a minha guia</p>
+                        <p>Lá encontrei Pai Xangô</p>
+                        <p>Quem dizia (2x)</p>
+                        <p>Zum zum zum</p>
+                        <p>Pai Xangô é caô</p>
+                        <p>Zum zum zum</p>
+                        <p>Pai Xangô Agodô (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=vY_-1CM3aGA" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="oxala-info" class="entity-info">
+                    <h1>Pontos de Oxala</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Oxalá criou a Terra</p>
+                        <p>Oxalá criou o Mar</p>
+                        <p>Oxalá criou o mundo</p>
+                        <p>Onde reinam os Orixás (2x)</p>
+                        <p>A pedra deu pra Xangô, meu pai é rei justiceiro</p>
+                        <p>As matas deu para Oxóssi, caçador grande guerreiro</p>
+                        <p>O mar com pescaria farta, ele deu pra lemanjá</p>
+                        <p>Os rios deu para Oxum, os ventos para Oyá</p>
+                        <p>Grandes campos de batalha, deu para Ogum guerreiro</p>
+                        <p>Campinas, Pai Oxalá, deu para seu boiadeiro</p>
+                        <p>Jardim com lindos gramados, deu para as crianças brincar</p>
+                        <p>Oxalá criou o mundo onde reinam os Orixás</p>
+                        <p>Mas Oxalá criou a Terra</p>
+                        <p>Oxalá criou o Mar</p>
+                        <p>Oxalá criou o mundo</p>
+                        <p>Onde reinam os Orixás (2x)</p>
+                        <p>O poço deu pra Nanã, a mais velha Orixá</p>
+                        <p>E o cruzeiro bendito, deu pras almas trabalhar</p>
+                        <p>Finalmente deu as ruas com estrela e luar</p>
+                        <p>Para Exu e Pombo Gira, nossos caminhos guardar</p>
+                        <a href="https://www.youtube.com/watch?v=HGB9pqZJtMA" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/31E1ekgYWBQQIBowOk6b5M?si=e6d7b5c3e59b41f8" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Estrela que governa o mundo</p>
+                        <p>Estrela que nasceu em Belém (2x)</p>
+                        <p>Estrela que governa meu destino</p>
+                        <p>E governa o seu também</p>
+                        <p>E para fazer uso dessa estrela</p>
+                        <p>É preciso, praticar o bem</p>
+                        <p>Oxalá xalá xalá</p>
+                        <p>Oxalá xalá xalá</p>
+                        <p>Oxalá xalá xalá maior (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=eJDEupPdv3M" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Zâmbi olhai esse mundo</p>
+                        <p>Que o senhor criou</p>
+                        <p>Com beleza e encanto</p>
+                        <p>Oxalá com o seu manto</p>
+                        <p>A bondade semeou (2x)</p>
+                        <p>Carregando a cruz</p>
+                        <p>Carregando a dor</p>
+                        <p>Oxalá é luz</p>
+                        <p>Ele é o amor (2x)</p>
+                        <p>Abre porta do coração</p>
+                        <p>Para receber meu pai</p>
+                        <p>Abre a porta do coração</p>
+                        <p>Para encontrar a paz (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=-3FAptvwnr0" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="caboclos-info" class="entity-info">
+                
+                    <h1>Pontos Povo de Mata</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Não tem distancia</p>
+                        <p>Não importa o caminho</p>
+                        <p>Não a fronteiras que possa me impedir</p>
+                        <p>Seja onde for eu vou louvar esse caboclo</p>
+                        <p>Que me criou e me ensinou a lhe seguir</p>
+                        <p>La na aldeia</p>
+                        <p>Quando os tambores tocam</p>
+                        <p>Reune moço, velhinho e criança</p>
+                        <p>Clareia luar clareia</p>
+                        <p>Clareia aldeia de seu Pena Branca</p>
+                        <p>Clareia luar clareia</p>
+                        <p>Quem nesse caboclo não perde a confiança</p>
+                        <p>Oke caboclo</p>
+                        <p>Oke caboclo seus filhos querem agradecer</p>
+                        <p>Oke caboclo</p>
+                        <p>Senhor da mata virgem venha sempre me valer</p>
+                        <p>Oke caboclo (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=RjscleclUiU" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/6hgMhS8XcTGxCcUM9Bp1pU?si=b725ce06aa324bb7" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Foi numa tarde serena</p>
+                        <p>La na mata da Jurema</p>
+                        <p>Eu vi o caboclo bradar</p>
+                        <p>Kiô</p>
+                        <p>Kiô kiô kiera</p>
+                        <p>Sua mata estava em festa</p>
+                        <p>Saravá seu Sete Flecha</p>
+                        <p>Ele é o rei da floresta (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=qmQ2akVZiHo" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Caboclo 7 flechas nasceu</p>
+                        <p>No jardim das oliveiras (2x)</p>
+                        <p>Trazia amarrado em sua cinta uma coral</p>
+                        <p>Oh sucuri jibóia da aldeia (2x)</p>
+                        <p>Oh sucuri jibóia</p>
+                        <p>Quando vem beirando o mar (2x)</p>
+                        <p>Olha como o brogoiô</p>
+                        <p>A sua cobra coral (2x)</p>
+                        <p>Segura essa cobra não deixa ela fugir</p>
+                        <p>O nome dessa cobra é cobra sucuri (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=WAalBIWB1DM" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Um grito na mata ecoou</p>
+                        <p>Foi Seu Pena Branca que chegou (2x)</p>
+                        <p>Com sua Flecha, com seu Cocar</p>
+                        <p>Seu Pena Branca vem nos ajudar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=fA1V68gwVWs" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/61boBzKIJd3sZibJJSJXQA?si=79396bef81534e77" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Dentro da mata virgem</p>
+                        <p>Uma linda cabocla eu vi (2x)</p>
+                        <p>Com seu saiote, feito de penas</p>
+                        <p>É a Jurema filha de Tupi (2x)</p>
+                        <p>Jurema, Jurema, Jurema</p>
+                        <p>Linda cabocla, filha de Tupi</p>
+                        <p>Ela vem, lá da Juremá</p>
+                        <p>Vem firmar seu ponto nesse congar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=wCBcqrasnWA" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/1tjpz7rzCAYRUreRZE0GFM?si=c7f2d7db7d614d12" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Estava na beira do rio, sem poder atravessar</p>
+                        <p>Chamei pelo caboclo, caboclo Tupinambá (2x)</p>
+                        <p>Tupinambá chamei</p>
+                        <p>Chamei, mandei chamar e á (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=PgspNpvisEA" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/12svYhpk7653vySrJC1F69?si=1c2e829ef1004167" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu vi o dia clarear</p>
+                        <p>Eu vi as andorinhas cantarem</p>
+                        <p>Na copa das árvores, no vento de Iansã</p>
+                        <p>Vi meu pai Oxossi com caboclo Urubatan (2x)</p>
+                        <p>Urubatan caboclo guerreiro</p>
+                        <p>Com a sua flecha atirava la no alto</p>
+                        <p>Buscando o tiro certeiro</p>
+                        <p>Para os seus inimigos sair desse terreiro</p>
+                        <a href="https://www.youtube.com/watch?v=tiFiegs9pI8" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>La na aldeia tem um caboclo forte</p>
+                        <p>Foi pai Oxossi quem o enviou</p>
+                        <p>O seu penacho eu vejo a brilhar</p>
+                        <p>Pena Dourada vem cá, vem trabalhar</p>
+                        <p>Que vento é esse tão forte que vem de lá</p>
+                        <p>Mãe Iansã chegando no jacutá</p>
+                        <p>Anunciando o seu grande amor</p>
+                        <p>Por um caboclo tão forte que ali chegou</p>
+                        <p>Seu Rompe Mato deu coroa de Orixá</p>
+                        <p>Pena Dourada feliz então bradou</p>
+                        <p>Anunciando que ele é Orixá</p>
+                        <p>Okê Oxossi</p>
+                        <p>Okê Okê Aro</p>
+                        <a href="https://www.youtube.com/watch?v=FW7N8gOfAnk" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Tava lá nas matas quando vi pai Oxalá</p>
+                        <p>Trazendo as luzes de um grande Orixá</p>
+                        <p>O pisa firme caboclo, vem trabalhar</p>
+                        <p>Seu Pena Branca, falangeiro de Oxalá (2x)</p>
+                        <p>Das suas águas Vó Nanã lhe batizou</p>
+                        <p>Abençoando com amor e com louvor</p>
+                        <p>O pisa firme caboclo, vem trabalhar</p>
+                        <p>Seu Rompe Mato deu coroa de Orixá (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=33WeytQ05c0" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/6ktayCoJdk90LALiF9Sghz?si=36fa07bbc38d40de" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Jurema</p>
+                        <p>O Jurema jureminha (2x)</p>
+                        <p>Ela cabocla flecheira</p>
+                        <p>Atirou flecha por ar</p>
+                        <p>E acertou numa jiboia</p>
+                        <p>E matou a cobra coral (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=SjK2M6XJbIo" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>O Jureme O Jurema</p>
+                        <p>Sua flecha caiu serena Jurema</p>
+                        <p>Dentro desse congá (2x)</p>
+                        <p>Salve o Sol, salve a Lua</p>
+                        <p>Salve São Sebastião</p>
+                        <p>Salve o povo da Jurema com a sua proteção (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=Lc_Tix_FLcw" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Cobra coral a sua mata está em festa</p>
+                        <p>O céu e o mar estão cantando em seu louvor (2x)</p>
+                        <p>E olha a cobra coral</p>
+                        <p>Piou piou</p>
+                        <p>Olha a cobra coral</p>
+                        <p>Piou piou</p>
+                        <p>Cobra coral estão cantando em seu louvor (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=FuWxnPos8nM" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>No meio da mata eu vi</p>
+                        <p>Dois nomes cravados num tronco de pau (2x)</p>
+                        <p>De um lado era seu Rompe Mato</p>
+                        <p>Do outro seu Cobra Coral (2x)</p>
+                        <p>No meio da Mata Virgem vi</p>
+                        <p>Os dois caboclos falavam a língua Tupi Guarani (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=VOYVC5JcIEA" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Vermelho é a cor do sangue de meu pai</p>
+                        <p>E verde é a cor das matas (2x)</p>
+                        <p>Saravá seu Rompe Mato da Jurema</p>
+                        <p>Saravá a mata que ele mora</p>
+                        <a href="https://www.youtube.com/watch?v=iRkzFmkcb2M" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>A mata tava fechada, Oxalá mandou abrir</p>
+                        <p>Quem tem sangue de caboclo, quero ver pisar aqui (2x)</p>
+                        <p>Caboclo é, caboclo é</p>
+                        <p>Caboclo é a luz da mata é (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=G42dcwvNooM" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2nJn981e7tp9yjrylfc184?si=da665653a01c47ef" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="oxossi-info" class="entity-info">
+                    <h1>Pontos de Oxossi</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Oxossi assoviou</p>
+                        <p>Para passar no Humaitá (2x)</p>
+                        <p>Para falar com Ogum Megê</p>
+                        <p>Mensageiro de Oxalá (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=fOB820dV2Rk" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Sou filho do guerreiro de uma flecha só</p>
+                        <p>Sou filho de Oxossi caçador</p>
+                        <p>E todo bom guerreiro não anda só</p>
+                        <p>Tem sempre um irmão merecedor</p>
+                        <p>O Rei das Matas</p>
+                        <p>O meu protetor (2x)</p>
+                        <p>Saravá meu pai Oxossi, sua benção meu senhor</p>
+                        <p>Oke Arô (4x)</p>
+                        <a href="https://www.youtube.com/watch?v=QRZmUhS-zlA" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2TxVpIaB0GDJXQj8uK0AXC?si=f44203710b56499c" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Oxossi mora de baixo da gameleira</p>
+                        <p>O de baixo da gameleira</p>
+                        <p>O salve Rompe Mato, salve Arranca toco, salve Tira Teima</p>
+                        <p>Ele é caboclo em qualquer lugar</p>
+                        <p>Firma seu ponto sem medo de errar</p>
+                        <p>Só não me toque na flor da Jurema</p>
+                        <p>Sem a lei suprema, do Pai Oxalá (2x)</p>
+                    </div>
+                </div>
+                
+                <div id="cigano-info" class="entity-info">
+                    <h1>Pontos de Ciganos(as)</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ori ori oriô</p>
+                        <p>Povo Cigano é o povo do amor (2x)</p>
+                        <p>É o povo do amor, é o povo do amor</p>
+                        <p>Povo Cigano é o povo do amor (2x)</p>
+                        <p>Povo Cigano não tem morada</p>
+                        <p>Sua morada é na beira da estrada (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=S0voVss8j08" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Cigano filho do vento</p>
+                        <p>Me mostra seu encantamento (2x)</p>
+                        <p>Traz seu punhal, seu violino</p>
+                        <p>Com liberdade, a caminhar</p>
+                        <p>Carrega grandes misterios</p>
+                        <p>E faz do céu, o seu unico teto</p>
+                        <p>Quem é esse rei justiceiro</p>
+                        <p>É Vladimir esse grande guerreiro (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=bWLxbmYdggI" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="cosme-info" class="entity-info">
+                    <h1>Pontos de Cosme e Damiao/Ibejada</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Papai me mande um balão</p>
+                        <p>Para cada criança que tem lá no céu (2x)</p>
+                        <p>Tem doce mamãe, tem doce mamãe</p>
+                        <p>Tem doce la no jardim (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=my5SKg2kj4w" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Fui no jardim colher as rosas</p>
+                        <p>E a vovozinha deu me as rosas mais formosas (2x)</p>
+                        <p>Cosme e Damião</p>
+                        <p>O Doum</p>
+                        <p>Crispim, crispiniano</p>
+                        <p>São os filhos de Ogum (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=KiCZuM1Pc90" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2qda1eLwC36XgK9RST3L82?si=b7b39774fba646b5" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Cosme e Damião</p>
+                        <p>Damião cade Doum</p>
+                        <p>Doum está passeando</p>
+                        <p>O no cavalo de Ogum (2x)</p>
+                        <p>Dois dois sereia do mar</p>
+                        <p>Dois dois mamãe Iemanja</p>
+                        <a href="https://www.youtube.com/watch?v=oxtFiKlh3Jc&list=OLAK5uy_k0Wb3NR_yjBhUYmaQ8fzVjBAqUykC7cCI" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/56rZfoIdteLHlEgl9z5VKT?si=f6cb2f7e69fb4801" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu quero doce, eu quero bala</p>
+                        <p>Eu quero mel, pra passar na sua cara (3x)</p>
+                        <a href="https://www.youtube.com/watch?v=dEMwf9gtfdQ" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Tem bala de coco e peteca</p>
+                        <p>Deixa a Ibeijada brincar (2x)</p>
+                        <p>Hoje é dia de festa</p>
+                        <p>Ibeijada vem saravá (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=BXAGXBc-5zg" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Andorinha que voa voa</p>
+                        <p>Leva os anjinhos pro céu, andorinha (4x)</p>
+                        <p>Voa voa voa andorinha</p>
+                        <p>Leva os anjinhos pro céu, andorinha (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=OvufRntd1fY" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Assovio assovio assovio (2x)</p>
+                        <p>No meio da mata virgem foi Flecinha quem chegou (2x)</p>
+                        <p>Ele é pequenininho mas é grande caçador (2x)</p>
+                        <p>Ele é filho da Jurema</p>
+                        <p>Oxala quem lhe enviou (2x)</p>
+                        <p>Flecinha de Odé</p>
+                        <p>Flechinha de Oxalá</p>
+                        <p>Ele é pequinininho</p>
+                        <p>Mas atira para caçar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=LDZMlCdTsZU" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Cosme e Damião</p>
+                        <p>A sua casa cheira</p>
+                        <p>Cheira cravo, cheira rosas</p>
+                        <p>Cheira flor de laranjeira  (4x)</p>
+                        <a href="https://www.youtube.com/watch?v=rFp7mZ64nq8" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="iemanja-info" class="entity-info">
+                    <h1>Pontos de Iemanja</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Mãe d'gua rainha das ondas sereia do mar</p>
+                        <p>Mãe d'gua seu canto é bonito quando vem do mar (2x)</p>
+                        <p>Como é lindo o canto de Iemanja</p>
+                        <p>Faz até o pescador chorar</p>
+                        <p>Quem escuta a mãe d'gua cantar</p>
+                        <p>Vai com ela pro fundo do mar</p>
+                        <p>Vai com ela pro fundo do mar</p>
+                        <p>Iemanja</p>
+                        <p>Ie Iemanja</p>
+                        <p>Rainha das ondas sereia do mar</p>
+                        <p>Rainha das ondas sereia do mar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=1Xf-NqKBHrY" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2CzKtmnEqSsYvK9srAC9Fk?si=8b5d1788e7314b33" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Hojeee.</p>
+                        <p>Hoje eu vou cantar</p>
+                        <p>Hoje eu vou cantar</p>
+                        <p>Vou louvar na areia, em lua cheia</p>
+                        <p>a Mãe Iemanjá! (2x)</p>
+                        <p>Rosa do mar,</p>
+                        <p>Minha Estrela do céu azul</p>
+                        <p>Não é historia de um pescador</p>
+                        <p>Que meu amor, eu vou lhe entregar (2x)</p>
+                        <p>Deixaaa</p>
+                        <p>Deixa as ondas do mar passar</p>
+                        <p>Ouça o canto da bela Odoyá</p>
+                        <p>Oxalá quem mandou</p>
+                        <p>Um grande amor do fundo do mar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=J9lL_72SV8s" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2Tyyn9hmaErGCdqAjfx47f?si=558b087139f140ec" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu fui na beira da praia</p>
+                        <p>Pra ver o balanço do mar (2x)</p>
+                        <p>Eu vi um retrato na areia</p>
+                        <p>Me lembrei da sereia</p>
+                        <p>Comecei a chamar (2x)</p>
+                        <p>O Janaína vem ver</p>
+                        <p>O Janaína vem cá</p>
+                        <p>Receber suas flores</p>
+                        <p>Que venho lhe ofertar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=8U-XinnXZ-A" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/48bpb2Q0IiuNloJpa6ETSl?si=8e2b8b0894ac4edd" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Vou chamar minha mãe</p>
+                        <p>Eu vou (2x)</p>
+                        <p>Na beira do mar (2x)</p>
+                        <p>Vou chamar minha mãe</p>
+                        <p>Eu vou (2x)</p>
+                        <p>Ela é Iemanjá, a rainha do mar</p>
+                        <p>Sereia do mar, firma seu ponto na areia</p>
+                        <p>Noite de lua, cheia vem nos abençoar</p>
+                        <p>Sereia do mar, invoca seus filhos com canto</p>
+                        <p>O seu dia é santo, Saravá Odoyá</p>
+                        <p>Salve a santa sereia, que ilumina a areia</p>
+                        <p>Com as estrelas do mar (2x)</p>
+                        <p>Que beleza que vem, para nos contemplar</p>
+                        <p>Leva contigo meu canto, para o fundo do mar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=yfBXe0mKHv8" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Retira a jangada do mar</p>
+                        <p>Mãe d'gua mandou avisar</p>
+                        <p>Que hoje não pode pescar</p>
+                        <p>Que hoje tem festa no mar (2x)</p>
+                        <p>Eeeee Iemanja</p>
+                        <p>Ela ela é a rainha do mar (2x)</p>
+                        <p>Traz verde e traz espelho</p>
+                        <p>Para ela se enfeitar</p>
+                        <p>Traz flores, traz perfume</p>
+                        <p>Pescador do mar</p>
+                        <a href="https://www.youtube.com/watch?v=mdS7E8vy6B0" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>A mãe Iara já vai rolando</p>
+                        <p>E todo mal do seus filhos ela vai levando (4x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Fiz um pedido pra mamãe sereia</p>
+                        <p>A Iemanjá para nunca mais penar</p>
+                        <p>Foi na areia</p>
+                        <p>Uma noite na areia branca do mar</p>
+                        <a href="https://www.youtube.com/watch?v=G7ckJ-nqVmg" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Odo odo, odo odo, odoyá!</p>
+                        <p>Odo odo, odo odo, odoyá!</p>
+                        <p>Iemanjá</p>
+                        <p>Saia do mar, venha ver a sua yaô</p>
+                        <p>Oh santa de azul, Oh santa do mar</p>
+                        <p>Vem ver seus filhos</p>
+                        <p>Iemanjá</p>
+                        <a href="https://www.youtube.com/watch?v=_2_Xuf19zZU" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="umbanda-info" class="entity-info">
+                    <h1>Pontos Umbanda</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Refletiiu a luz divina</p>
+                        <p>Com todo o seu explendor</p>
+                        <p>É no reino de Oxalá</p>
+                        <p>Onde há paz e amor</p>
+                        <p>Luz que refletiu na terra</p>
+                        <p>Luz que refletiu no mar</p>
+                        <p>Luz que veio de Aruanda</p>
+                        <p>Para nos iluminar</p>
+                        <p>Umbanda é paz e amor</p>
+                        <p>Um mundo cheio de luz</p>
+                        <p>É força que nos da vida e a grandeza nos conduz</p>
+                        <p>Avante filho de fé</p>
+                        <p>Com a nossa lei não há</p>
+                        <p>Levando ao mundo inteiro</p>
+                        <p>A bandeira de Oxalá (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=25P3O948_gM" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="abertura-info" class="entity-info">
+                    <h1>Pontos de Abertura</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Abrimos a nossa gira</p>
+                        <p>Pedimos a proteção</p>
+                        <p>A Deus pai todo poderoso</p>
+                        <p>E a virgem Conceição (2x)</p>
+                        <p>Ja abri minha Jurema</p>
+                        <p>Já abri meu Juremá (2x)</p>
+                        <p>Com a força dos nossos guias</p>
+                        <p>E do meu pai Oxala (2x)</p>
+                        <p>Bate a cabeça, bate no congá</p>
+                        <p>Bate a cabeça em nome de Oxalá (2x)</p>
+                        <p>Oxalá meu Pai</p>
+                        <p>Tenha pena de nós, tenha dó</p>
+                        <p>Se a volta do mundo é grande</p>
+                        <p>Seus poderes são maior (2x)</p>
+                        <p>Oh Iemanja minha Mãe</p>
+                        <p>Oh Iemanja</p>
+                        <p>Oh Iemanja vamos todos saravá</p>
+                        <p>Vem lá do mar</p>
+                        <p>Embarca na canoa</p>
+                        <p>Passarinho voa</p>
+                        <p>Quem manda lá no mar?</p>
+                        <p>É Iemanja</p>
+                        <p>É a sereia la do mar</p>
+                        <p>É Iemanja</p>
+                        <p>Rema rema lá no mar</p>
+                        <p>Pra Iemanja</p>
+                        <p>Uma oferenda eu vou levar</p>
+                        <p>Pra Iemanja</p>
+                        <p>Com flores e guaraná</p>
+                        <p>Pra Iemanja (2x)</p>
+                    </div>
+                </div>
+                
+                <div id="defumacao-info" class="entity-info">
+                    <h1>Pontos de Defumação</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>AINDA NÃO TEMOS NADA AQUI.</p>
+                    </div>
+                </div>
+                
+                <div id="marinheiro-info" class="entity-info">
+                    <h1>Pontos de Marinheiros</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Adeus camarada adeus</p>
+                        <p>Adeus que eu já vou me embora</p>
+                        <p>Foi no balanço do mar que eu vim</p>
+                        <p>É no balanço de mar que eu vou embora (2x)</p>
+                        <p>Quem parte leva saudade</p>
+                        <p>Que fica soluça e chora</p>
+                        <a href="https://www.youtube.com/watch?v=6SMHCC0ZBwE" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/6S2MAzGOxAcOLyBzuFgayi?si=a253468fe6024288" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu não sou daqui</p>
+                        <p>Marinheiro só</p>
+                        <p>Eu não tenho amor</p>
+                        <p>Marinheiro só</p>
+                        <p>Eu sou da Bahia</p>
+                        <p>Marinheiro só</p>
+                        <p>De São Salvador</p>
+                        <p>Marinheiro só (2x)</p>
+                        <p>Ô, marinheiro, marinheiro</p>
+                        <p>Marinheiro só</p>
+                        <p>Ô, quem te ensinou a nadar</p>
+                        <p>Marinheiro só</p>
+                        <p>Ou foi o tombo do navio</p>
+                        <p>Marinheiro só</p>
+                        <p>Ou foi o balanço do mar</p>
+                        <p>Marinheiro só (2x)</p>
+                        <p>Lá vem, lá vem</p>
+                        <p>Marinheiro só</p>
+                        <p>Como ele vem faceiro</p>
+                        <p>Marinheiro só</p>
+                        <p>Todo de branco</p>
+                        <p>Marinheiro só</p>
+                        <p>Com seu bonezinho</p>
+                        <p>Marinheiro só (2x)</p>
+                        <p>Ô, marinheiro, marinheiro</p>
+                        <p>Marinheiro só</p>
+                        <p>Ô, quem te ensinou a nadar</p>
+                        <p>Marinheiro só</p>
+                        <p>Ou foi o tombo do navio</p>
+                        <p>Marinheiro só</p>
+                        <p>Ou foi o balanço do mar</p>
+                        <p>Marinheiro só (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=x6xuUuUfqRs" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/5zDCBXkr2enIJHPijfA7Mi?si=22b234e161b64334" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Marinheiro é hora</p>
+                        <p>É hora de vir trabalhar (2x)</p>
+                        <p>É pau, é chuva, é pedra</p>
+                        <p>Marujo nas ondas do mar (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=ibK1Nc72TFw" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/2crAFSzd9Qe6slycOhdZoy?si=894ec3d7b8d748f3" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>A canoa virou marinheiro</p>
+                        <p>No fundo do mar tem dinheiro (4x)</p>
+                        <a href="https://www.youtube.com/watch?v=2FobBYGfxFc" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div id="boiadeiro-info" class="entity-info">
+                    <h1>Pontos de Boiadeiros</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Olha a ponta do laço vaqueiro</p>
+                        <p>O vem topar, o vem topar</p>
+                        <p>Na porteira do curral (4x)</p>
+                        <a href="https://www.youtube.com/watch?v=kaCjfDn2-VM&t=7s" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ohh que vaqueiro malvado (2x)</p>
+                        <p>Botou fogo na fazenda</p>
+                        <p>Não deixou tirar meu gado</p>
+                        <p>Que vaqueiro é aquele</p>
+                        <p>Que pulou o meu cercado</p>
+                        <p>Botou fogo na fazenda</p>
+                        <p>Não deixo tirar meu gado</p>
+                        <p>O gado não era meu</p>
+                        <p>Era de pastor alugado</p>
+                        <a href="https://www.youtube.com/watch?v=SrN2wF1fsSY" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <br>
+                    <div>
+                        <p>Seu boiadeiro por aqui choveu (4x)</p>
+                        <p>Choveu choveu, relampejou</p>
+                        <p>Foi tanta água que meu boi nadou (2x)</p>
+                        <a href="https://www.youtube.com/watch?v=1_V42R6YYGI" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Cadê minha corda, de laçar meu boi</p>
+                        <p>O meu boi fugiu, eu não sei pra onde foi (4x)</p>
+                        <a href="https://www.youtube.com/watch?v=M_M-DmAJwoU" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="https://open.spotify.com/intl-pt/track/6AGjW3gR5HvnnnzOcUP0HN?si=ec467290b1c943b4" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+
+                <div id="tranca-rua-info" class="entity-info">
+                    <h1>Pontos de Tranca Rua</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>O sino da igrejinha faz Belém blem blom (4x)</p>
+                        <p>Deu meia noite o galo já cantou</p>
+                        <p>Seu Tranca Ruas que é o dono da gira</p>
+                        <p>Corre gira que Ogum mandou</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Tava dormindo na beira do Mar (4x)</p>
+                        <p>O Rei das almas me chamou</p>
+                        <p>Pra trabalhar (2x)</p>
+                        <p>Acorda Tranca Ruas</p>
+                        <p>Vem trabalhar</p>
+                        <p>Levanta Tranca Ruas</p>
+                        <p>Vem trabalhar</p>
+                        <p>O inimigo está invadindo a porteira do congá</p>
+                        <p>Bota o inimigo pra fora para nunca mais voltar</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Quatro horas da manhã</p>
+                        <p>Ogum rompeu alvorada (2x)</p>
+                        <p>Mas ele é o Ogum do Sol</p>
+                        <p>Ogum da Rua</p>
+                        <p>Saravá seu Tranca Ruas</p>
+                        <p>Saravá Ogum Megê (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu amei</p>
+                        <p>Eu amei alguém</p>
+                        <p>E esse alguém amou ninguém (2x)</p>
+                        <p>Eu amei o sol</p>
+                        <p>Eu amei a lua</p>
+                        <p>E lá nas almas eu amei Seu Tranca Ruas (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Quando o sol aqui não mais brilhar</p>
+                        <p>Quando a lua o seu clarão refletir</p>
+                        <p>É sinal que está na hora</p>
+                        <p>É ele que chegou agora</p>
+                        <p>Já deu meia noite</p>
+                        <p>Tranca Rua é quem chega aqui</p>
+                        <p>Jurou amar alguém, na encruzilhada</p>
+                        <p>Jurou fazer o bem, de madrugada</p>
+                        <p>E hoje com fé, companheiro e amigo leal</p>
+                        <p>Desfaz feitiço e também desfaz o mal</p>
+                        <p>E toda vez que na rua eu caminhar</p>
+                        <p>E ouvir de longe sua voz a ecoar</p>
+                        <p>Tenho certeza que agora eu não ando sozinho</p>
+                        <p>Seu Tranca Ruas é dono do meu caminho</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>O sol me queima</p>
+                        <p>Vem a lua e me cura (2x)</p>
+                        <p>Coroa linda é de seu Tranca Ruas (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>No clarão do luar</p>
+                        <p>Onde nasceu a lua (2x)</p>
+                        <p>Quando se ver no aperto</p>
+                        <p>Qualquer toco preto é Tranca Rua (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Ô luar, ô luar</p>
+                        <p>Ô luar...</p>
+                        <p>Mas ele é dono da rua (2x)</p>
+                        <p>Quem cometeu as suas faltas</p>
+                        <p>Peça perdão a Tranca Rua</p>
+                        <p>Quem manda de dia é o Sol</p>
+                        <p>Ô luar...</p>
+                        <p>Quem manda de noite é a Lua</p>
+                        <p>Ô luar... (2x)</p>
+                        <p>Quem cometeu as suas faltas</p>
+                        <p>Peça perdão a Tranca Rua</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Seu Tranca Rua da uma volta la fora (2x)</p>
+                        <p>Quem for bom bota para dentro</p>
+                        <p>E quem não for deixa lá fora (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Seu Tranca Rua me cubra com a sua capa</p>
+                        <p>Quem tem sua capa, escapa (2x)</p>
+                        <p>A sua capa é o manto de caridade</p>
+                        <p>Sua capa cobre tudo, só não cobre a falsidade</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Deu meia noite, a lua se escondeu</p>
+                        <p>La na encruzilhada dando a sua gargalhada</p>
+                        <p>Tranca Rua apareceu (2x)</p>
+                        <p>É laroyê, é laroyê, é laroyê</p>
+                        <p>É mojubá, é mojubá, é mojubá</p>
+                        <p>Ele é odara, dando a sua gargalhada</p>
+                        <p>Quem tem fé em Tranca Rua, é só pedir, que ele dá (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Quem quiser me ver, meia noite em ponto</p>
+                        <p>Na escuridão debaixo de um lampião</p>
+                        <p>Eu me chamo Tranca Rua, em nome de meu irmão</p>
+                        <p>Quem quiser fazer macumba, faz aqui na minha mão</p>
+                        <p>Feitiço ou quizomba faz aqui na minha mão</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>No cemitério ao lado esquerdo de uma tumba</p>
+                        <p>Mora lá seu Tranca Rua ele é meu protetor</p>
+                        <p>Vem de cajado, de capa e cartola</p>
+                        <p>Cortando com sua faca a lingua de falador</p>
+                        <p>É Laroyê, É Mojuba</p>
+                        <p>Não mexe comigo moço, meu Exú vai te pegar (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="quiteria-info" class="entity-info">
+                    <h1>Pontos da Maria Quitéria</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Maria Quitéria comeu ponta de agulha</p>
+                        <p>Quem mexer com ela cava a sepultura (2x)</p>
+                        <p>Alupandê Maria Quitéria</p>
+                        <p>Alupandê (2x)</p>
+                        <p>Mas o buraco que ela mora é um mistério</p>
+                        <p>Mas o buraco que ela mora é o cemitério (2x)</p>
+                        <p>Com sua faca na boca é Maria Quitéria</p>
+                        <p>Com sua rosa na boca é Maria Quitéria (2x)</p>
+                        <p>Alupandê Maria Quitéria</p>
+                        <p>Alupandê</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Mas ela é loira</p>
+                        <p>Olhos azuis</p>
+                        <p>Maria Quitéria Rainha de Omolu (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Qui qui qui qui qui</p>
+                        <p>Qui qui qui Quitéria (2x)</p>
+                        <p>Ela trabalha de noite</p>
+                        <p>Ela trabalha no inferno</p>
+                        <p>Na porta da calunga</p>
+                        <p>No meio do cruzeiro</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Vou cantar pras almas de Oya</p>
+                      <p>Exu Gangá Ruá, Balu Baruá</p>
+                      <p>Balu Baruá, Balu Baruá (2x)</p>
+                      <p>Eu canto na rua no clarão da lua</p>
+                      <p>Ai que lua, ai que lua, ai que lua Tranca Rua</p>
+                      <p>Eu não quero guerra eu canto pra terra</p>
+                      <p>Pra Quitéria, pra Quitéria, pra Quitéria, pra Quitéria (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                </div>
+                
+                <div id="padilha-info" class="entity-info">
+                    <h1>Pontos da Maria Padilha</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Abre essa cova quero ver tremer</p>
+                        <p>Abre essa cova quero ver balanciar (2x)</p>
+                        <p>Maria Padilha das Almas</p>
+                        <p>O cemiterio é o seu lugar</p>
+                        <p>É no buraco que a Padilha mora</p>
+                        <p>É la na lomba que a Padilha vai girar (2x)</p>
+                        <p>Me chamam de leviana</p>
+                        <p>Até mesmo mulher de cabaré (2x)</p>
+                        <p>Mas a lingua desse povo não tem osso</p>
+                        <p>Deixa esse povo falar (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Vem comigo senhora, vem comigo mulher</p>
+                        <p>Te dou minha vida, deixa esse cabaré (2x)</p>
+                        <p>Todo mundo sabe</p>
+                        <p>Todo mundo vê</p>
+                        <p>Todo mundo comenta</p>
+                        <p>Que eu amo você</p>
+                        <p>A Padilha sabe</p>
+                        <p>A Mulambo vê</p>
+                        <p>A Quitéria comenta</p>
+                        <p>Que eu amo você</p>
+                        <p>Se ontem para você eu fui espinho</p>
+                        <p>O espinho não machuca sua flor (2x)</p>
+                        <p>Eu só errei</p>
+                        <p>Quando entreguei a minha alma a sua</p>
+                        <p>Mas o sol não pode viver perto da lua (2x)</p>
+                        <p>E assim termina história</p>
+                        <p>De um lindo beija flor</p>
+                        <p>Que morreu no meu jardim</p>
+                        <p>Por não encontrar sua linda flor (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu hoje vou passar no cemitério</p>
+                        <p>Sempre foi o maior mistério</p>
+                        <p>Saber se ela mora lá (2x)</p>
+                        <p>Cova 66 corredor 40 Padilha levantou</p>
+                        <p>Eu quero ver quem aguenta (2x)</p>
+                        <br>
+                        <p>RESPOSTA</p>
+                        <p>No portão do cemitério descalça ela tava</p>
+                        <p>Uma moça toda de preto dando gargalhada (2x)</p>
+                        <p>Saiu da cova 66 pra fazer magia</p>
+                        <p>Não me conhece boa noite Sou Maria Padilha (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Ela vem girando na linha das almas é Maria Padilha (2x)</p>
+                      <p>O seu olhar é sereno</p>
+                      <p>O seu olhar me fascina</p>
+                      <p>É só quando eu toco tambor</p>
+                      <p>É só quando eu toco para ela</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="ganga-info" class="entity-info">
+                    <h1>Pontos do Exu Ganga</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>AINDA NÃO TEMOS NADA AQUI.</p>
+                    </div>
+                </div>
+                
+                <div id="caveira-info" class="entity-info">
+                    <h1>Pontos de Exu Caveira</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>La na calunga tem</p>
+                        <p>O seu misterio sagrado (2x)</p>
+                        <p>Sete porteiras quem disse</p>
+                        <p>Exu Caveira mora ao lado (2x)</p>
+                        <p>zum zum zum</p>
+                        <p>A poeira levantou</p>
+                        <p>zum zum zum</p>
+                        <p>Exu Caveira saravou</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Portão de ferro</p>
+                        <p>Cadeado de madeira (2x)</p>
+                        <p>É na porta do cemiterio</p>
+                        <p>Onde mora Exu Caveira (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Portão de ferro</p>
+                        <p>Cadeado de madeira (2x)</p>
+                        <p>É la no cemiterio</p>
+                        <p>Quem manda é Exu Caveira (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Soltaram um bode preto meia noite na calunga (2x)</p>
+                      <p>Ele correu os quatro canto, foi parar lá na porteira</p>
+                      <p>Bebeu marafo com Tata Caveira (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Soltaram um bode preto meia noite na calunga (2x)</p>
+                      <p>Ele correu os quatro canto, foi parar lá na porteira</p>
+                      <p>Bebeu marafo com Tata Caveira (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>E puerê</p>
+                      <p>E puerá (2x)</p>
+                      <p>Olha a mosca varejeira</p>
+                      <p>Salve Exú Caveira (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="ze-info" class="entity-info">
+                    <h1>Pontos de Zé Pilintra</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Eu menti para ela Zé</p>
+                        <p>Disse que não gostava dela Zé</p>
+                        <p>E que ela podia ir, que não ia doer</p>
+                        <p>Falei que não iamos dar certo</p>
+                        <p>E que seria melhor para ela assim</p>
+                        <p>Eu a fiz chorar seu Zé</p>
+                        <p>Também achei que ela não fosse embora Zé</p>
+                        <p>Quando me virou as costas eu só sabia chorar</p>
+                        <p>Ô Zé, ô Zé</p>
+                        <p>Nunca vi malandro chorar por uma mulher. (2x).</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Uma vela acesa não lumeia uma favela</p>
+                      <p>Mais vai iluminar o caminho da casa dela</p>
+                      <p>Apaga a luz acende a vela</p>
+                      <p>A malandragem tomou conta da favela</p>
+                      <p>Malandro lhe digo meu irmão</p>
+                      <p>Que essa nega mexeu com meu coração</p>
+                      <p>Eu hoje vou subir lá na favela</p>
+                      <p>Vou dizer pro marido dela que eu me apaixonei por ela</p>
+                      <p>Malandro eu posso até correr perigo</p>
+                      <p>Mais se eu descer o morro a nega desce comigo</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Na porta da delegacia</p>
+                      <p>Seu delegado eu não matei minha pretinha (2x)</p>
+                      <p>O homem que estava com ela era um covarde</p>
+                      <p>Quando meu punhal eu joguei</p>
+                      <p>O homem saiu da frente</p>
+                      <p>E a mulher que eu mais amava eu matei</p>
+                      <p>Chorei, chorei a mulher que eu amava eu matei (2x)</p>
+                      <p>Na porta da delegacia</p>
+                      <p>Seu delegado eu não matei minha pretinha (2x)</p>
+                      <p>O homem que estava com ela era um covarde</p>
+                      <p>Quando meu punhal eu joguei</p>
+                      <p>O homem saiu da frente</p>
+                      <p>E a mulher que eu mais amava eu matei</p>
+                      <p>Chorei, chorei a mulher que eu amava eu matei (2x)</p>
+                      <p>Foram sete punhaladas em cima do coração</p>
+                      <p>Eu me chamo malandro e não aceito traição (2x)</p>
+                      <p>Mas eu chorei</p>
+                      <p>Euu, chorei a mulher que eu amava eu matei</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Eu ando triste ô Zé minha alma chora</p>
+                      <p>Eu ando triste ô Zé não vá embora</p>
+                      <p>Ô Zé minha vida têm sido ruim</p>
+                      <p>Se não fosse você oque seria de mim (2x)</p>
+                      <p>Laia laia laia (2x)</p>
+                      <p>Ô Zé minha vida tem sido ruim</p>
+                      <p>Se não fosse você oque seria de mim (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="navalha-info" class="entity-info">
+                
+                    <h1>Pontos da Maria Navalha</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Pode me chamar de covarde</p>
+                        <p>Mas não abandone essa mulher (2x)</p>
+                        <p>Isso não é mulher</p>
+                        <p>É uma tentação (2x)</p>
+                        <p>Ela joga baralho, ela puxa navalha</p>
+                        <p>Risca a faca no chão (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="rosa-caveira-info" class="entity-info">
+                    <h1>Pontos da Rosa Caveira</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>No cemitério tinha um caixão lacrado</p>
+                        <p>7 velas ao seu lado, e nele estava escrito assim (2x)</p>
+                        <p>Morada de Rosa Caveira, ela quem conhece o começo, meio e fim (2x)</p>
+                        <p>Mas de repente cadeado estourou</p>
+                        <p>A tampa levantou e a gargalhada ecoou (2x)</p>
+                        <p>Que gargalhada é essa</p>
+                        <p>É Rosa Caveira fazendo festa (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                </div>
+                
+                <div id="mirim-info" class="entity-info">
+                    <h1>Pontos de Exu Mirim</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Vi um menino sentado na encruza</p>
+                        <p>Perguntei o que que foi, perguntei, o que que faz (2x)</p>
+                        <p>Eu vim aqui desmanchar feitiço</p>
+                        <p>Mas pra Calunga eu já vou voltar (2x)</p>
+                        <p>Vi um menino sentado na encruza</p>
+                        <p>Perguntei o que que foi, perguntei, o que que faz (2x)</p>
+                        <p>Eu sou Exu Mirim, e aprendi a trabalhar</p>
+                        <p>Quem me ensinou, foi Seu Tranca Rua</p>
+                        <p>O seu feitiço, eu vou quebrar</p>
+                        <p>Vi um menino sentado na encruza</p>
+                        <p>Perguntei o que que foi, perguntei, o que que faz (2x)</p>
+                        <p>Quero um marafo pra beber, e um charuto pra fumar</p>
+                        <p>O seu feitiço eu mandei embora para nunca mais voltar</p>
+                        <p>Vi um menino sentado na encruza</p>
+                        <p>Perguntei o que que foi, perguntei, o que que faz (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                </div>
+                
+                <div id="rosa-negra-info" class="entity-info">
+                    <h1>Pontos da Rosa Negra</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>AINDA NÃO TEMOS NADA AQUI.</p>
+                    </div>
+                </div>
+                
+                <div id="mulambo-info" class="entity-info">
+                    <h1>Pontos da Maria Mulambo</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>La no mato tem um lixo</p>
+                        <p>Quem quiser fazer feitiço</p>
+                        <p>Vai buscar seu patuá</p>
+                        <p>La no mato Maria</p>
+                        <p>La no mato tem um lixo</p>
+                        <p>Quem quiser fazer feitiço</p>
+                        <p>Vai buscar seu patuá</p>
+                        <p>A Maria Mulambo, Rainha macumbeira</p>
+                        <p>Quando desce a ladeira, pra curimba vem girar (2x)</p>
+                        <p>Aaaaaa</p>
+                        <p>A Maria Mulambo é de macumbá</p>
+                        <p>Eeeeeee</p>
+                        <p>A Maria Mulambo é de macumbê (2x)</p>
+                        <p>A Maria Mulambo é de ganga ê</p>
+                        <p>A Maria Mulambo é de gangá (2x)</p>
+                        <p>Eu piso no lodo, eu piso no barro</p>
+                        <p>Eu piso na lama, mas não caio (2x)</p>
+                        <p>Galo canta a cobra pia</p>
+                        <p>Quero ver quem chamou por Maria (2x)</p>
+                        <p>É que o galo cantou a cobra piou</p>
+                        <p>A Maria Mulambo é quem chegou (4x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                      <p>Do trapo, do pó, ela é muló</p>
+                      <p>Da boca do lixo, ela é farrapo só (4x)</p>
+                      <p>Ela faz mandinga com coro do sapo</p>
+                      <p>Essa mulher é o verdadeiro diabo (4x)</p>
+                      <p>Na boca da lata ela bota para ferver</p>
+                      <p>Sangue de rato com azeite de dende (4x)</p>
+                      <p>Pimenta malagueta com pelo de rato</p>
+                      <p>Asa de morcego com rabo de galo (4x)</p>
+                      <p>Amigo escute o que vou te dizer</p>
+                      <p>Se não pagar o que me deve</p>
+                      <p>O feitiço é para você (4x)</p>
+                      <p>Se tu não pagar o que me deve</p>
+                      <p>O feitiço é para você</p>
+                      <p>Se não pagar o que me deve</p>
+                      <p>O feitiço é para você</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                  <br>
+                  <div>
+                    <p>Noite de lua cheia vibra magia</p>
+                    <p>Abre a roda hoje a noite é das Maria (2x)</p>
+                    <p>Meu ilu te chamou e o Cruzeiro tremeu</p>
+                    <p>O portão se abriu e a catacumba se estremeceu (2x)</p>
+                    <p>E a curimba levantoooou</p>
+                    <p>A Maria chegoooou (4x)</p>
+                    <p>Vem curimbá</p>
+                    <p>Mariá (7x)</p>
+                    <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                  <br>
+                  <div>
+                    <p>Maria Mulambo, bota fogo e arrebenta</p>
+                    <p>Ela faz a roda grande e passa dentro da pequena (2x)</p>
+                    <p>Bruxa maldita, que nasceu na escruzilhada</p>
+                    <p>Quando o sino tocava, dando sete badaladas</p>
+                    <p>Maria mulambo aparecia, dando a sua gargalhada</p>
+                    <p>Eu ouvi chorar, ouvi gritar, ouvi gemer (1x)</p>
+                    <p>Era Maria Mulambo fazendo a terra tremer (5x)</p>
+                    <p>Eu ouvi chorar, ouvi gritar, ouvi gemer (1x)</p>
+                    <p>Era Maria Mulambo fazendo a terra tremer (4x)</p>
+                    <p>Eu ouvi chorar, ouvi gritar, ouvi gemer (1x)</p>
+                    <p>Era Maria Mulambo fazendo a terra tremer (3x)</p>
+                    <p>Era Maria Mulambo</p>
+                    <p>A terra que treme (2x Rapido)</p>
+                    <p>Maria Mulambo faz tremer</p>
+                    <p>Era Maria Mulambo fazendo a terra tremer</p>
+                    <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                    <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                </div>
+                
+                <div id="tiriri-info" class="entity-info">
+                    <h1>Pontos do Exu Tiriri</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Seu Tiriri eu tenho que reconhecer</p>
+                        <p>Se hoje eu tenho caminhos, agradeço a você (2x)</p>
+                        <p>Vivia perdido, pelo mundo sem amor</p>
+                        <p>Depois que lhe conheci toda minha vida mudou</p>
+                        <p>Hoje dou viva, sem ter medo do amanhã </p>
+                        <p>Viva hoje e viva sempre</p>
+                        <p>O Exú Tiriri Lonan (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Exu Tiriri Lonan</p>
+                        <p>Lonan cade o Tiriri (2x)</p>
+                        <p>Ele veio de aruanda</p>
+                        <p>É para salvar povo da Umbanda</p>
+                        <p>Exu Tiriri Lonan (2x)</p>
+                        <p>Olha o ebó do Exu</p>
+                        <p>Tiriri</p>
+                        <p>Olha o ebó do Lonan</p>
+                        <p>Tiriri</p>
+                        <p>Leba gangá, leba gangá</p>
+                        <p>Leba gangá o Exu (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="abertura-exu-info" class="entity-info">
+                    <h1>Pontos de Abertura</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Das almas das almas</p>
+                        <p>Quem foi que lhe chamou (2x)</p>
+                        <p>Alupandê pro seu povo</p>
+                        <p>Povo das almas chegou (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Mas eu vou, eu vou</p>
+                        <p>Vou mandar chamar meu povo (4x)</p>
+                        <p>Eu vou mandar chamar meu povo</p>
+                        <p>La na Sete Encruzilhadas</p>
+                        <p>Eu vou mandar chamar meu povo</p>
+                        <p>Sem Exu não se faz nada</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="mare-info" class="entity-info">
+                    <h1>Pontos do Exu Maré</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Atracou eu vi ancorar</p>
+                        <p>Um navio de velas negras na beira do mar</p>
+                        <p>Vem marinheiro, vem fazer magia</p>
+                        <p>Nas ondas do mar, vem sacudir minha curimba</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>Maré maré maré</p>
+                        <p>Maré maré maré é o exu</p>
+                        <p>Afirma o seu ponto</p>
+                        <p>Levanta os quatro pé</p>
+                        <p>No meio da calunga</p>
+                        <p>Ele é o Exu Maré</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                    <div>
+                        <p>O tempo fechado mandava avisar</p>
+                        <p>As ondas estavam grandes, era a revolta do mar (2x)</p>
+                        <p>O homem na areia com tridente na mão</p>
+                        <p>Era Exú Maré que no mar é guardião (2x)</p>
+                        <p>Na beira da praia ele foi encontrar</p>
+                        <p>A maior magia, seu amor foi resgatar</p>
+                        <p>A menina da praia ele foi buscar</p>
+                        <p>E com ela voltar para o fundo mar (2x)</p>
+                        <p>Exu Maré veio buscar</p>
+                        <p>Na praia a doçura pro mar se acalmar (4x)</p>
+                        <p>Mas Exu Maré veio buscar</p>
+                        <p>Na praia a doçura pro mar se acalmar</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                </div>
+                
+                <div id="marabo-info" class="entity-info">
+                    <h1>Pontos do Exu Marabô</h1>
+                    <p>__________________________</p>
+                    <div>
+                        <p>AINDA NÃO TEMOS NADA AQUI.</p>
+                    </div>
+                </div>
+                
+                <div id="porteira-info" class="entity-info">
+                  <h1>Pontos de Exu Porteira</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>Não importa saber quem sou</p>
+                      <p>De onde eu vim nem pra onde eu vou</p>
+                      <p>Eu sou Exu não tenho morada</p>
+                      <p>Moro na rua na encruzilhada</p>
+                      <p>Eu sou Exu não tenho fronteira</p>
+                      <p>Lá no cemitério eu sou Exu Porteira</p>
+                      <p>Ôooo</p>
+                      <p>Prepara a pembra que o rei chegou</p>
+                      <p>Senhor da joia do dinheiro e da paixão</p>
+                      <p>Abre caminhos para todos do salão</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+                
+                <div id="morcego-info" class="entity-info">
+                  <h1>Pontos do Exu Morcego</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>AINDA NÃO TEMOS NADA AQUI.</p>
+                  </div>
+                </div>
+                
+                <div id="farrapo-info" class="entity-info">
+                  <h1>Pontos da Maria Farrapo</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>Tá mexendo comigo, Ô seu moço</p>
+                      <p>Sem saber quem eu sou (2x)</p>
+                      <p>Ela vai lhe dizer ela quem é</p>
+                      <p>Ela é Maria Farrapo lá do cabaré (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+                
+                <div id="veludo-info" class="entity-info">
+                  <h1>Pontos do Exu Veludo</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>Vem veludo</p>
+                      <p>Vem pro terreiro girar (2x)</p>
+                      <p>Vem que o tambo runfou</p>
+                      <p>O bicho pegou e o povo lhe chamou (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+                
+                <div id="sete-info" class="entity-info">
+                  <h1>Pontos do Seu Sete</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>Seu Sete meu amigo de alma</p>
+                      <p>Seu Sete meu irmão quinbandeiro</p>
+                      <p>Gira todo mundo gira</p>
+                      <p>Mas seu Sete é mensageiro de Oxala lalaia</p>
+                      <p>Gira todo mundo gira</p>
+                      <p>Mas seu Sete é mensageiro de Oxala</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+                
+                <div id="pg-praia-info" class="entity-info">
+                  <h1>Pontos da Pomba Gira da Praia</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>Me leva a estrela lá do mar me leva</p>
+                      <p>Sacode os ombros no Congá</p>
+                      <p>Me leva</p>
+                      <p>Pombo gira da Praiaaaa (2x)</p>
+                      <p>Firma curimba, firma a curimba</p>
+                      <p>Firma curimba sobre as ondas do mar (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+                
+                <div id="bara-info" class="entity-info">
+                  <h1>Pontos do Exu Bará</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>A meia noite quando andares pela rua</p>
+                      <p>Respeite a encruzilhada que ela é do Bará da Rua</p>
+                      <p>É o Bará, é o Bará</p>
+                      <p>Afirma ponto Tranca Rua vai chegar</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+                
+                <div id="capa-preta-info" class="entity-info">
+                  <h1>Pontos do Exu Capa Preta</h1>
+                  <p>__________________________</p>
+                  <div>
+                      <p>Tremeu, tremeu</p>
+                      <p>Chão do terreiro tremeu</p>
+                      <p>Lá vem vindo Capa Preta</p>
+                      <p>O inimigo estremeceu</p>
+                      <p>Tremeu, tremeu</p>
+                      <p>Chão do terreiro tremeu</p>
+                      <p>Lá vem vindo Capa Preta</p>
+                      <p>A quimbanda agradeceu</p>
+                      <p>Capa Preta sussurroooou</p>
+                      <p>Vim cuidar do que é meu (2x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+                
+                <div id="pg-sol-info" class="entity-info">
+                    <h1>Pontos da Pomba Gira do Sol</h1>
+                    <div>
+                        <p>Eu quero ver Pomba Gira do Sol</p>
+                        <p>Eu quero ver Pomba Gira trabalhar (2x)</p>
+                        <p>Na encruza ela vem girando</p>
+                        <p>Com seu Tatá e dona Maria Mulambô (2x)</p>
+                        <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                        <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                    </div>
+                    <p>__________________________</p>
+                  </div>
+                
+                <div id="forno-info" class="entity-info">
+                  <h1>Pontos da Pomba Gira do Forno</h1>
+                  <div>
+                      <p>Levanta do fogo e vem curimbar (2x)</p>
+                      <p>A madame satã chegou para girar (2x)</p>
+                      <p>Crematorio ferveu, sepultura rachou  (2x)</p>
+                      <p>Com os cabelos em chamas</p>
+                      <p>A mulher do forno chegou</p>
+                      <p>E o fogo pegou</p>
+                      <p>Queimou (8x)</p>
+                      <a href="" target="_blank"><i id="youtube__button" class='fa fa-youtube'></i></a>
+                      <a href="" target="_blank"><i id="spotify__button" class='fa fa-spotify'></i></a>
+                  </div>
+                  <p>__________________________</p>
+                </div>
+        
+            </section>
+
+        </main>
+    
+        
+        <footer class="disclaimer-premium">
+            <div class="text">
+                <p class="disclaimer-premium__title">&copy; 2024 - TU Ogum Sete Ondas</p>
+            </div>
+        </footer> 
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/esquerda.js"></script>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+@import url(https://fonts.bunny.net/css?family=alatsi:400);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root {
+    /*===== Colors =====*/
+    --first-color: #5B65F5;
+    --first-color-light: #C4C7F5;
+    --dark-color: #0E1026;
+    --white-color: #FBFBFB;
+    --body-color: #e1ffcf;
+    --branco-color: #fff6ff;
+    --nav-color: #e7ffd5;
+}
+
+body {
+    background-color:var(--branco-color);
+    text-align: center;
+    align-items: center;
+}
+
+
+/* MAIN */
+
+
+main {
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 48px 10px 150px 10px;
+    border-radius: 10px;
+}
+
+/* SECTIONS */
+
+section > h1 {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+
+section > span {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+/* ABOUT */
+
+.title__about {
+    font-size: 32px;
+    padding-top: 15px;
+}
+
+.subtitle__about{
+    font-size: 26px;
+    padding-top: 48px;
+    margin-bottom: 1px;
+}
+
+.subtitle__about + .subtitle__about {
+    padding-bottom: 1000px;
+    margin-bottom: 1px;
+}
+
+.text__about {
+    font-size: 20px;
+    margin-bottom: 6px;
+    
+}
+
+/* CONTACT */
+
+.title__contact {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.adress__contact {
+    padding: 0 10rem 0 10rem;
+    font-weight: bolder;
+    @media screen and (max-width: 480px) {
+        padding: 0;
+    }
+
+}
+
+.map__contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: auto;
+}
+
+/* CRONOGRAMA */
+
+#cronograma {
+    padding: 0 10rem 0 10rem;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    margin-top: 3rem;
+  
+    @media screen and (max-width: 480px) {
+      padding: 0;
+    }
+  }
+  
+  #cronograma img {
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.2rem;
+  
+    @media screen and (max-width: 480px) {
+      padding: 0;
+      width: 320px;
+    }
+  
+  }
+
+  /* FOOTER */
+
+footer {
+    background-color: #333;
+    color: #000;
+    text-align: center;
+    padding: 0.2rem 0;
+    font-size: 16px;
+    font-weight: bolder;
+    box-shadow: 0px 3px 10px #464646;
+    position: fixed;
+    bottom: 0;
+}
+
+.disclaimer-premium {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+}
